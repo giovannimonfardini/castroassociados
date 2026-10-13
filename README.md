@@ -1,8 +1,11 @@
 # Casto Associados — versão refatorada
 
-Landing page baseada no briefing Baseline, adaptada à Casto. O arquivo `index.html` é independente, com imagens, fontes, CSS e JavaScript incorporados, e pode ser aberto diretamente no navegador. Lenis é carregado opcionalmente por CDN, com fallback para rolagem nativa.
+Landing page baseada no briefing Baseline, adaptada à Casto. Lenis é carregado opcionalmente por CDN, com fallback para rolagem nativa.
 
-A fonte editável é `src/landing.html`. Após editar, execute `node scripts/assemble-standalone.mjs` para gerar novamente `index.html`. Os arquivos React anteriores permanecem como histórico e não são carregados pela página.
+A fonte editável é `src/landing.html`. `npm run assemble` (executado automaticamente por `dev` e `build`) gera duas versões:
+
+- `index.html` — referencia imagens, vídeo e fontes de `public/` por caminho. É a entrada do Vite e a versão publicada.
+- `standalone.html` — tudo embutido em base64 (~20 MB), abre direto no navegador sem servidor. Não é versionado.
 
 ## Executar
 

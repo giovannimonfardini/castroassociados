@@ -4,4 +4,5 @@ dist/
 qa/
 design-qa*.md
 npm-debug.log*
+standalone.html
 

@@ -4,7 +4,7 @@
 
 The user requested a refactor using the supplied Baseline specification. Preserve Casto Associados' black-and-green identity and accounting content; adapt the photographic hero, Onest typography, rounded section framing, carousels, spring motion, fullscreen navigation, and consultation modal. This supersedes the initial option-1 mock as the current layout direction.
 
-The new implementation is `src/landing.html`, with inline CSS and vanilla JavaScript. Run `node scripts/assemble-standalone.mjs` after edits to embed local images/fonts into `index.html`. That generated HTML can open directly without a build step. Lenis is an optional CDN enhancement with a native-scroll fallback. Existing React source is retained as the previous version, not mounted by the current HTML.
+The new implementation is `src/landing.html`, with inline CSS and vanilla JavaScript. `npm run assemble` (run automatically before `dev` and `build`) replaces the `__TOKEN__` asset placeholders and writes two files: `index.html`, which links assets from `public/` and is the Vite/production entry, and `standalone.html` (gitignored), which inlines everything as base64 and opens directly without a server. Never ship the inlined version to production. Lenis is an optional CDN enhancement with a native-scroll fallback. The project no longer uses React.
 
 Do not invent client testimonials, firm statistics, employee identities, or contact details. Keep demonstration forms explicit about not sending data.
 
@@ -22,7 +22,7 @@ On mobile, keep the hero logo, primary title, supporting copy, and main call-to-
 
 The detailed accounting solutions section follows the supplied September 2026 reference: large editorial heading with a green phrase, a compact trust banner with a professional smartphone portrait, and four tall white service cards with green icon medallions and rule-style footers. Preserve the existing expandable details and service-to-contact flow.
 
-The benefits section at `#parceria` follows the supplied September 2026 split-panel reference: an overlapping tablet/dashboard visual above a dark-green editorial panel, paired with three light benefit boards. Use `public/images/casto-dashboard-tablet.png` as its visual and keep benefit copy grounded in organization, clarity, time, and routine rather than unverified tax savings or performance promises.
+The benefits section at `#parceria` follows the supplied September 2026 split-panel reference: an overlapping tablet/dashboard visual above a dark-green editorial panel, paired with three light benefit boards. Use `public/images/mockup.png` (the `__DASHBOARD_TABLET__` token) as its visual and keep benefit copy grounded in organization, clarity, time, and routine rather than unverified tax savings or performance promises.
 
 The FAQ follows the September 2026 screenshot reference: oversized centered title, category pills, rounded white disclosure cards on a warm surface, and a separate contact panel. Use real filtering behavior, retain verified questions, and route the contact action to the existing local consultation dialog without inventing email addresses or employee identities.
 
