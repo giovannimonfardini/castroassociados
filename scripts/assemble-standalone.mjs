@@ -8,6 +8,10 @@ const root = new URL('../', import.meta.url);
 const assets = {
   '__OFFICE__': ['images/office.jpg', 'image/jpeg'],
   '__CONSULT__': ['images/consultation.jpg', 'image/jpeg'],
+  '__CARD01__': ['images/card01.png', 'image/png'],
+  '__CARD02__': ['images/card02.png', 'image/png'],
+  '__CARD03__': ['images/card03.png', 'image/png'],
+  '__CARD04__': ['images/card04.png', 'image/png'],
   '__LOGO__': ['images/logo1.png', 'image/png'],
   '__HERO_VIDEO__': ['videos/vd01.mp4', 'video/mp4'],
   '__SERVICES_PERSON__': ['images/services-professional.png', 'image/png'],
