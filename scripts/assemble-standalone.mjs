@@ -23,8 +23,6 @@ const assets = {
   '__HERO_VIDEO__': ['videos/vd01.mp4', 'video/mp4'],
   '__SERVICES_PERSON__': ['images/services-professional.png', 'image/png'],
   '__DASHBOARD_TABLET__': ['images/mockup.png', 'image/png'],
-  '__GRID_LANDSCAPE__': ['images/background1.png', 'image/png'],
-  '__GRID_PORTRAIT__': ['images/background2.png', 'image/png'],
   '__ECOSYSTEM_MOCKUP__': ['images/mockup 2.png', 'image/png'],
   '__FONT_REGULAR__': ['fonts/onest-400.ttf', 'font/ttf'],
   '__FONT_MEDIUM__': ['fonts/onest-500.ttf', 'font/ttf'],
