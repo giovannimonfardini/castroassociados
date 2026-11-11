@@ -32,7 +32,7 @@ The testimonials section (`.reviews#depoimentos`, October 2026) adapts the "Test
 
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
-Responsive defaults: stable 16px root sizing, page width capped at 1920px, two-row FAQ tabs on phones, and stacked contact panels below tablet widths. Check narrow 320px layouts as well as standard phone, tablet, and desktop sizes when editing sections.
+Responsive defaults: stable 16px root sizing, page width capped at 1920px, two-row FAQ tabs on phones, and stacked contact panels below tablet widths. Check narrow 320px layouts as well as standard phone, tablet, and desktop sizes when editing sections. Layout corrections from November 2026 live in the final `/* Correções de layout */` CSS block: overview cards keep label, title and description rows aligned across cards, insight cards share one height, section copy always paints above the benefits tablet image, and mobile headings use `clamp()` so each sentence stays on one line.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
 
